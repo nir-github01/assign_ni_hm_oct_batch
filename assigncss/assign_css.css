@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(100, 101, 100);
+}
+
+.head_nav_div{
+    background-color: rgb(11, 113, 11);
+    width: 100%;
+    height: 10rem;
+}
+.header_div h1{
+    text-align: center;
+    font-weight: bold;
+    font-family: fantasy;
+}
+.header_div img{
+    float: right;
+    width: 3rem;
+    height: 3rem;
+    margin: 1rem 4rem 0 0;
+}
+
+.nav_div{
+    background-color: rgb(12, 216, 12);
+    width: 100%;
+    height: 4rem;
+    margin-top: 3rem;
+}
+table{
+    border: 0px;
+    margin-left: 2rem;
+
+}
+th{
+
+    font-size:larger;
+    border: 0px;
+    padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+
+}
+section{
+    margin-top: 10px;
+}
+.section_div{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(11, 113, 11);
+    width: 100%;
+    height: 110%;
+}
+
+.container{
+    padding-top: 1rem;
+    background-color: rgb(12, 216, 12);
+    width: 67%;
+    height: 25rem;  
+}
+.container h1{
+    margin: 4rem 0 3rem 0;
+    text-align: center;
+    font-size: 160%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container dt{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    text-align: justify;
+    line-height: 2rem;
+   
+}
+.box{
+    background-color: rgb(12, 216, 12);
+    width: 30%;
+    height: 100%;
+}
+.box h1{
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.box h1{
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.img_div{
+    display:flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+ 
+}
+.img_div img{
+    width: 10rem;
+    height: 10rem;
+}
+footer{
+    margin-top: 10px;
+}
+.footer_div{
+    background-color: green;
+    width: 100%;
+    height: 12rem;
+}
+.footer_div dt{
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 3rem ;
+    text-align: justify;
+    margin-top:2px;
+    line-height: 1rem;
+}
