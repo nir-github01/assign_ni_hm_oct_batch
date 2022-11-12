@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery events</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    -<div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Jquery Hide and Show events</h2>
+                <div class="col-sm-3">
+                   
+                    <div id="box" class="boxClass">
+                        <p>If you click on the "Hide" button,<br> I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing <br>elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="hide">Hide</button>
+                    <button class="btn btn-primary" id="show">Show</button>
+                </div>
+                <div class="col-sm-3">
+                    <div id="box1" class="boxClass">
+                        <p>If you click on the "Hide"(1s)<br>  button,I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing<br> elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="hide1">Hide</button>
+                    <button class="btn btn-primary" id="show1">Show</button>
+                </div>
+                <div class="col-sm-3">
+                    <div id="box2" class="boxClass">
+                        <p>If you click on the "Hide"<br>  button,I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing<br> elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="toggle">Toggle (Hide/show) </button>
+                   
+                </div>
+            </div>
+           
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Jquery FadeIn and fade out events</h2>
+                <div class="col-sm-3">
+                    <div id="fbox" class="boxClass">
+                        <p>If you click on the "fade" button,<br> I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing <br>elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="fadein">FadeIn</button>
+                    <button class="btn btn-primary" id="fadeout">FadeOut</button>
+                </div>
+                <div class="col-sm-3">
+                    <div id="fbox1" class="boxClass">
+                        <p>If you click on the "Fade"(1s)<br>  button,I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing<br> elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="fadein1">FadeIn</button>
+                    <button class="btn btn-primary" id="fadeout1">FadeOut</button>
+                </div>
+                <div class="col-sm-3">
+                    <div id="fbox2" class="boxClass">
+                        <p>If you click on the "Fade"<br>  button,I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing<br> elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="ftoggle">Toggle (FadeIn/FadeOut) </button>
+                   
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Jquery slider events</h2>
+                <div class="col-sm-3">
+                   
+                    <div id="panel" class="boxClass">
+                        <p>If you click on the "Hide" button,<br> I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing <br>elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="slide">Slide down</button>
+                    
+                </div>
+                <div class="col-sm-3">
+                    <div id="panel1" class="boxClass">
+                        <p>If you click on the "Hide"(1s)<br>  button,I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing<br> elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="slide1">Slide Up</button>
+             
+                </div>
+                <div class="col-sm-3">
+                    <div id="panel2" class="boxClass">
+                        <p>If you click on the "Hide"<br>  button,I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing<br> elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="slidetoggle">Toggle (slide up/down) </button>
+                   
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Jquery Animate events events</h2>
+                <div class="col-sm-3">
+                   
+                    <div id="animationbox" class="boxClass">
+                        <p>If you click on the "Hide" button,<br> I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing <br>elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="animatebtn">Animation</button>
+                    
+                </div>
+                <div class="col-sm-3">
+                    <div id="animationbox1" class="boxClass">
+                        <p>It is also possible to <br>define relative values <br>(the value is then relative<br> to the element's<br> current value). This is done by <br>putting += or -= in<br> front of the value</p>
+                       
+                    </div>
+                    <button class="btn btn-primary" id="animatebtn1">animation</button>
+             
+                </div>
+                <div class="col-sm-3">
+                    <div id="animationbox2" class="boxClass">
+                        <p>If you click on the "Hide"<br>  button,I will disappear.</p>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing<br> elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="animatetoggle">Toggle (Animation) </button>
+                   
+                </div>
+            </div>
+           
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Jquery Stop() events events</h2>
+                <div class="col-sm-12">
+                   
+                    <div id="stoppanel" class="boxClass">
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="startslide">Start Slide</button>
+                    <button class="btn btn-danger" id="stopslide">Stop Slide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    $(document).ready(function(){
+
+        //Simple hide and show
+      $('#hide').click(function(event){
+        let events=event.target.id
+        $('#box').hide()
+      });
+      $('#show').click(function(){
+        $('#box').show();
+      });
+
+         // hide and show with timer
+         $('#hide1').click(function(event){
+            let events=event.target.id
+            $('#box1').hide(1000)
+          });
+          $('#show1').click(function(){
+            $('#box1').show(1000);
+          })
+
+          //Toggling
+
+         $('#toggle').click(function(event){
+            let events=event.target.id
+            $('#box2').toggle()
+          });
+
+//Fade In/out
+$('#fadein').click(function(){
+    $('#fbox').fadeIn()
+})
+$('#fadeout').click(function(){
+    $('#fbox').fadeOut()
+});
+
+//Fade In/out
+$('#fadein1').click(function(e){
+    e.target.id
+    $('#fbox1').fadeIn(5000)
+})
+$('#fadeout1').click(function(){
+    $('#fbox1').fadeOut(5000)
+});
+
+//Fade In/out Toggle
+$('#ftoggle').click(function(){
+    $('#fbox2').toggle('slow')
+});
+
+//Slide Up -down
+$('#slide').click(function(e){
+    e.target.id
+    $('#panel').slideDown(1000)
+})
+$('#slide1').click(function(){
+    $('#panel1').slideUp(5000)
+});
+$('#slidetoggle').click(function(){
+    $('#panel2').slideToggle(1000)
+});
+
+//Animation Events
+$('#animatebtn').click(function(e){
+    e.target.id
+    $('#animationbox').animate({
+        left: '250px',
+        opacity: '0.5',
+        height: '300px',
+        width: '300px'
+      });
+})
+$('#animatebtn1').click(function(){
+    $('#animationbox1').animate({
+        left: '250px',
+        height: '+=20px',
+        width: '+=20px'
+      });
+});
+$('#animatetoggle').click(function(){
+    $('#animationbox2').animate({
+        left: '250px',
+        opacity: '0.5',
+        height: 'toggle',
+        width: 'toggle'
+      });
+});
+
+//Slide stop
+$('#startslide').click(function(e){
+    e.target.id
+    $('#stoppanel').slideDown(5000)
+})
+$('#stopslide').click(function(e){
+    e.target.id
+    $('#stoppanel').slideDown()
+})
+        
+    });
+    </script>
+</body>
+</html>

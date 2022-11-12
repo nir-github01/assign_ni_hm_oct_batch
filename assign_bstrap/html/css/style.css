@@ -1,0 +1,31 @@
+.row{
+    margin:20px;
+}
+h2{
+    text-align: center;
+}
+.col{
+   text-align: center;
+    padding: 20px;
+}
+div.col:nth-child(2n){
+    background-color:blue;
+    color: aliceblue;
+}
+
+div.col:nth-child(2n+1){
+    background-color:rgb(94, 9, 44);
+    color: aliceblue;
+}
+span.col:nth-child(2n){
+    background-color:blue;
+    color: aliceblue;
+}
+
+span.col:nth-child(2n+1){
+    background-color:rgb(94, 9, 44);
+    color: aliceblue;
+}
+.custom-tooltip {
+    --bs-tooltip-bg: var(--bs-primary);
+  }

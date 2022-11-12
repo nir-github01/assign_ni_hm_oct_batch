@@ -1,0 +1,25 @@
+.boxClass{
+    width: max-content;
+    text-align: justify;
+    padding: 10px;
+    box-shadow: 4px 4px 4px 4px rgb(138, 86, 7);
+    margin:5px 0px 20px 0px;
+}
+h2{
+    text-align: center;
+}
+.btn{
+    margin-left:15px;
+}
+#panel,#panel2, #stoppanel{
+    display: none;
+}
+p{
+    text-align: justify;
+}
+/* .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+} */
