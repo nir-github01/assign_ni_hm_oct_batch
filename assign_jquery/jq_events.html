@@ -159,6 +159,50 @@
                 </div>
             </div>
         </div>
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Jquery Stop() events events</h2>
+                <div class="col-sm-12">
+                   
+                    <div id="stoppanel-tog" class="boxClass">
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="startslide-tog">Start Slide</button>
+                    <button class="btn btn-danger" id="stopslide-tog">Stop Slide</button>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Jquery chaining events events</h2>
+                <div class="col-sm-12">
+                   
+                    <div id="chainpanel" class="boxClass">
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                        <p>If you click on the "Hide" button, I will disappear.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, rerum.</p>
+                    </div>
+                    <button class="btn btn-primary" id="chainslide">Start Slide</button>
+                    <button class="btn btn-danger" id="stopchainslide">Stop Slide</button>
+                </div>
+            </div>
+        </div>
     </div>
     <script>
     $(document).ready(function(){
@@ -251,13 +295,38 @@ $('#animatetoggle').click(function(){
 //Slide stop
 $('#startslide').click(function(e){
     e.target.id
-    $('#stoppanel').slideDown(5000)
+    $('#stoppanel').slideDown(7000)
 })
 $('#stopslide').click(function(e){
     e.target.id
-    $('#stoppanel').slideDown()
+    $('#stoppanel').stop()
 })
-        
+
+//Slide stop toggle
+//Slide stop
+$('#startslide-tog').click(function(e){
+    e.target.id
+    $('#stoppanel-tog').slideToggle(7000)
+})
+$('#stopslide-tog').click(function(e){
+    e.target.id
+    $('#stoppanel-tog').stop()
+})
+//chaining
+$('#chainslide').click(function(e){
+    e.target.id
+    $('#chainpanel')
+    .css('background-color', 'pink')
+    .css('color', 'green')
+    .slideDown(3000)
+    .slideUp(3000)
+  
+    
+})
+$('#stopchainslide').click(function(e){
+    e.target.id
+    $('#stoppanel-tog').stop()
+})    
     });
     </script>
 </body>
