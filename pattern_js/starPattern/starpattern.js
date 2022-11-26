@@ -25,7 +25,7 @@ for(let i=0; i<=n; i++){
     console.log(msg)
 }*/
 
-/**Hollow Square Pattern  */
+/**2 Hollow Square Pattern  */
 
 /** // Method 1 
 let n= 5;
