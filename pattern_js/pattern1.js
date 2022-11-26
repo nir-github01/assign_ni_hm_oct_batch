@@ -7,14 +7,15 @@ function pattern(){
           
                 msg=msg + " &nbsp" + column; 
                // document.writeln(msg + '<br>')
-           for(let k=1; k<=column; column++){
+           for(let k=1; k<=column; k++){
                msg=k;
            }
         }
-        document.writeln(msg + '<br>')
+       // document.writeln(msg + '<br>')
        // console.log(msg)
        // document.getElementById('pattern').innerHTML=" " + msg;
     }
+    document.writeln(msg + '<br>')
 }
 function printNum()
 {

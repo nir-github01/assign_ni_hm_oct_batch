@@ -166,25 +166,43 @@
 // console.log(sortarr)//find duplicate numbers
 //  console.log(darr)  //find sorted array 
 
-let darr= [1,2,7,3,2,1,7,9,8,4,1,2, 8, 10, 11, 12, 20, 10];
-let temp;
-let sortarr=[];
-let n = darr.length;
-let m = n/2;
-let pivot=4;
+// let darr= [1,2,7,3,2,1,7,9,8,4,1,2, 8, 10, 11, 12, 20, 10];
+// let temp;
+// let sortarr=[];
+// let n = darr.length;
+// let m = n/2;
+// let pivot=4;
 //console.log(darr[9])
 //console.log(n, m)
-for(let i=0; i<=m; i++){
-  for(let j=18; j>m; j--){
-    if(darr[i] > pivot ){
+// for(let i=0; i<=m; i++){
+//   for(let j=18; j>m; j--){
+//     if(darr[i] > pivot ){
      
-    }
-    if(darr[i] == darr[j]){
-      sortarr.push(darr[i]);
-    }
+//     }
+//     if(darr[i] == darr[j]){
+//       sortarr.push(darr[i]);
+//     }
    
-  }
+//   }
 
-}
+// }
 //console.log(sortarr)//find duplicate numbers
- console.log(darr)  //find sorted array 
+//  console.log(darr)  //find sorted array 
+
+
+let row_num=6;
+let msg;
+console.log('hello');
+for(let i=1; i<=row_num; i++){
+     msg='';
+    for(let j=1; j<=i; j++){
+           msg=msg + " " + j; 
+           //console.log(msg)
+       for(let k=1; k<=j; k++){
+           msg=k;
+           console.log(msg)
+        }
+    }
+   // console.log(msg)
+}
+//console.log(msg)
