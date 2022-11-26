@@ -134,11 +134,25 @@
 
 //Question 9. Read an inout string and print the last 4 characters of the input as a string.
 
-let str9 = "adhjk";
-let n = str9.length;
-let m= n-4;
-let newStr = '';
-for(let i=m; i<str9.length; i++){
-  newStr +=str9[i];
-}
- console.log(newStr);
+// let str9 = "adhjk";
+// let n = str9.length;
+// let m= n-4;
+// let newStr = '';
+// for(let i=m; i<str9.length; i++){
+//   newStr +=str9[i];
+// }
+//  console.log(newStr);
+
+//Factorial of n where 1<=n<=10;
+
+// function fact(n){
+//   let factnum = 1;
+//   if(n>=1 && n<=10){
+//       for(let i=1; i<=n; i++){
+//        factnum=factnum * i;
+//       }
+//       console.log(factnum)
+//   }
+// }
+
+fact(5);
